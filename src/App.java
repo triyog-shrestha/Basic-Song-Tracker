@@ -9,13 +9,14 @@ public class App {
         do {
             option = ob.menu();
             if (option == 1) {
-                ob.played();
+                ob.playSong();
+            }
+            else if (option == 2){
+                ob.viewRanking();
             }
             else if (option == 3){
                 ob.listSongs();
             }
-
-
         }while (option != 4 );
         sc.close();
     }
